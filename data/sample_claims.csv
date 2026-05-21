@@ -1,0 +1,6 @@
+claim_id,policy_id,customer_id,claim_date,claim_amount,claim_status,claim_type
+CLM1001,POL1001,CUST1001,2026-01-02,2500,Approved,Auto
+CLM1002,POL1002,CUST1002,2026-01-03,1200,Pending,Health
+CLM1003,POL1003,CUST1003,2026-01-04,8000,Rejected,Property
+CLM1004,POL1001,CUST1001,2026-01-05,400,Approved,Health
+CLM1005,POL1004,CUST1004,2026-01-06,15000,Pending,Life

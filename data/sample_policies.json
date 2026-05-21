@@ -1,0 +1,30 @@
+[
+  {
+    "policy_id": "POL1001",
+    "policy_type": "Auto",
+    "start_date": "2025-01-01",
+    "end_date": "2026-12-31",
+    "premium_amount": 1800
+  },
+  {
+    "policy_id": "POL1002",
+    "policy_type": "Health",
+    "start_date": "2025-04-01",
+    "end_date": "2026-03-31",
+    "premium_amount": 1200
+  },
+  {
+    "policy_id": "POL1003",
+    "policy_type": "Property",
+    "start_date": "2025-06-01",
+    "end_date": "2026-05-31",
+    "premium_amount": 2400
+  },
+  {
+    "policy_id": "POL1004",
+    "policy_type": "Life",
+    "start_date": "2025-02-01",
+    "end_date": "2035-01-31",
+    "premium_amount": 3000
+  }
+]

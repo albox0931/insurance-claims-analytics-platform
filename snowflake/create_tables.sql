@@ -1,0 +1,33 @@
+CREATE DATABASE IF NOT EXISTS INSURANCE_ANALYTICS;
+CREATE SCHEMA IF NOT EXISTS INSURANCE_ANALYTICS.BRONZE;
+CREATE SCHEMA IF NOT EXISTS INSURANCE_ANALYTICS.SILVER;
+CREATE SCHEMA IF NOT EXISTS INSURANCE_ANALYTICS.GOLD;
+
+CREATE OR REPLACE TABLE INSURANCE_ANALYTICS.BRONZE.RAW_CLAIMS (
+    claim_id STRING,
+    policy_id STRING,
+    customer_id STRING,
+    claim_date DATE,
+    claim_amount NUMBER(12,2),
+    claim_status STRING,
+    claim_type STRING
+);
+
+CREATE OR REPLACE TABLE INSURANCE_ANALYTICS.SILVER.CLEAN_CLAIMS (
+    claim_id STRING,
+    policy_id STRING,
+    customer_id STRING,
+    claim_date DATE,
+    claim_amount NUMBER(12,2),
+    claim_status STRING,
+    claim_type STRING,
+    processed_at TIMESTAMP
+);
+
+CREATE OR REPLACE TABLE INSURANCE_ANALYTICS.GOLD.CLAIMS_SUMMARY (
+    claim_type STRING,
+    claim_status STRING,
+    total_claims NUMBER,
+    total_claim_amount NUMBER(12,2),
+    avg_claim_amount NUMBER(12,2)
+);
