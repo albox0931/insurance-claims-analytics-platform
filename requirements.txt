@@ -1,0 +1,7 @@
+pyspark
+pandas
+apache-airflow
+snowflake-connector-python
+dbt-core
+dbt-snowflake
+pytest
